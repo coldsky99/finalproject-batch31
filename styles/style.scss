@@ -1,0 +1,357 @@
+$greydk : #404040;
+$greenlt : #94B43D;
+$greendk : #84A232;
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 170px;
+    line-height: 170px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $greydk;
+
+    .green-text {
+        color: $greenlt;
+    }
+}
+
+h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: $greydk;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: $greydk;
+}
+
+i {
+    font-size: 40px;
+    line-height: 22px;
+    color: $greenlt;
+}
+
+/* Button */
+.delicious-btn {
+    font-family: 'Anton', sans-serif;
+    display: inline-block;
+    min-width: 160px;
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: uppercase;
+    background-color: $greenlt;
+}
+
+.delicious-btn.active,
+.delicious-btn:hover,
+.delicious-btn:focus {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: $greendk;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+
+.grt-menu-row {
+
+    .grt-menu-logo {
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    ul.grt-menu li a {
+        font-family: 'Rbuik', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: $greydk;
+        text-transform: capitalize;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .grt-menu-row {
+        height: 53px;
+
+        h2 {
+            font-size: 25px;
+            line-height: 22px;
+        }
+    }
+
+
+    /* Menu */
+    header {
+        height: 53px;
+    }
+
+}
+
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
+	.grt-mobile-button {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+}
+
+#carousel {
+
+    .carousel-inner {
+
+        .carousel-item {
+            height: 628px;
+            width: 100%;
+            background: no-repeat center center scroll;
+            background-size: cover;
+            transition: -webkit-transform 2s ease;
+            transition: transform 2s ease;
+            transition: transform 2s ease, -webkit-transform 2s ease;
+
+            .caption {
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.2);
+                padding: 40px;
+                animation-duration: 1s;
+                animation-delay: 2s;
+
+                p {
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: #ffffff;
+                    animation-duration: 1s;
+                    animation-delay: 2.2s;
+                    letter-spacing: 0px;
+                }
+
+                a {
+                    animation-duration: 1s;
+                    animation-delay: 2.4s;
+                }
+            }
+
+        }
+        
+        .carousel-item.beach {
+            background-image: url("../images/slider/beach.png");
+        }
+    
+        .carousel-item.afternoon {
+            background-image: url("../images/slider/afternoon.png");
+        }
+    
+        .carousel-item.ricefield {
+            background-image: url("../images/slider/ricefield.png");
+        }
+
+    }
+
+    .mtop {
+        margin-top: 98px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #carousel {
+
+        .carousel-item {
+            height: 421px;
+
+            .caption {
+
+                h1 {
+                    font-size: 70px;
+                    line-height: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            
+            }
+        }
+
+        .mtop {
+            margin-top: 53px;
+        }
+
+    }
+}
+
+
+@supports (backdrop-filter: blur(5px)) {
+    #carousel .carousel-item .caption {
+        backdrop-filter: blur(5px);
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (device-width: 768px) {
+    #carousel .caption h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    #carousel .caption h1 {
+        font-size: 100px;
+        line-height: 100px;
+
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    #carousel .caption h1 {
+        font-size: 100px;
+        line-height: 100px;
+
+    }
+}
+
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.carousel-indicators {
+    bottom: 120px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-indicators {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+
+    }
+
+}
+
+.about {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.cta {
+    background-image: url("../images/cta.png");
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+    background-size: cover;
+    background-position: top;
+
+    .card {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+    
+    }
+
+    h2 {
+        font-family: 'Anton', sans-serif;
+        font-size: 35px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .text-box {
+        padding: 30px 20px;
+    }
+
+    .both-space {
+        margin: 80px 0;
+    }
+
+    .btn-md {
+        padding: 15px 45px;
+        font-size: 16px;
+    }
+    
+}
+
+
+@supports (backdrop-filter: blur(5px)) {
+    .cta .card {
+        backdrop-filter: blur(5px);
+    }
+}
+
+
+footer {
+    background: #94B43D;
+    color: white;
+    font-family: 'Anton', sans-serif;
+
+    ul {
+        margin: 0;
+        padding: 10px 0;
+
+        .list-inline-item  {
+           padding: 0 10px;
+
+            .fab {
+                color: white;
+                font-size: 36px;
+                line-height: 22px;
+            }
+            
+        }
+    }
+}

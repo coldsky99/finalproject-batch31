@@ -1,0 +1,315 @@
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 170px;
+  line-height: 170px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+h2 .green-text {
+  color: #94B43D;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #404040;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #404040;
+}
+
+i {
+  font-size: 40px;
+  line-height: 22px;
+  color: #94B43D;
+}
+
+/* Button */
+.delicious-btn {
+  font-family: 'Anton', sans-serif;
+  display: inline-block;
+  min-width: 160px;
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: uppercase;
+  background-color: #94B43D;
+}
+
+.delicious-btn.active,
+.delicious-btn:hover,
+.delicious-btn:focus {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #84A232;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.grt-menu-row .grt-menu-logo a:hover {
+  text-decoration: none;
+}
+
+.grt-menu-row ul.grt-menu li a {
+  font-family: 'Rbuik', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #404040;
+  text-transform: capitalize;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grt-menu-row {
+    height: 53px;
+  }
+  .grt-menu-row h2 {
+    font-size: 25px;
+    line-height: 22px;
+  }
+  /* Menu */
+  header {
+    height: 53px;
+  }
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) {
+  .grt-mobile-button {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+
+#carousel .carousel-inner .carousel-item {
+  height: 628px;
+  width: 100%;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  transition: -webkit-transform 2s ease;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+#carousel .carousel-inner .carousel-item .caption {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#carousel .carousel-inner .carousel-item .caption p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  letter-spacing: 0px;
+}
+
+#carousel .carousel-inner .carousel-item .caption a {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+#carousel .carousel-inner .carousel-item.beach {
+  background-image: url("../images/slider/beach.png");
+}
+
+#carousel .carousel-inner .carousel-item.afternoon {
+  background-image: url("../images/slider/afternoon.png");
+}
+
+#carousel .carousel-inner .carousel-item.ricefield {
+  background-image: url("../images/slider/ricefield.png");
+}
+
+#carousel .mtop {
+  margin-top: 98px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #carousel .carousel-item {
+    height: 421px;
+  }
+  #carousel .carousel-item .caption h1 {
+    font-size: 70px;
+    line-height: 22px;
+  }
+  #carousel .carousel-item .caption p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #carousel .mtop {
+    margin-top: 53px;
+  }
+}
+
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+  #carousel .carousel-item .caption {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (device-width: 768px) {
+  #carousel .caption h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #carousel .caption h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #carousel .caption h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.carousel-indicators {
+  bottom: 120px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .carousel-indicators {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cta {
+  background-image: url("../images/cta.png");
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+  background-size: cover;
+  background-position: top;
+}
+
+.cta .card {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cta h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cta .text-box {
+  padding: 30px 20px;
+}
+
+.cta .both-space {
+  margin: 80px 0;
+}
+
+.cta .btn-md {
+  padding: 15px 45px;
+  font-size: 16px;
+}
+
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+  .cta .card {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+footer {
+  background: #94B43D;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+footer ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer ul .list-inline-item {
+  padding: 0 10px;
+}
+
+footer ul .list-inline-item .fab {
+  color: white;
+  font-size: 36px;
+  line-height: 22px;
+}
+/*# sourceMappingURL=style.css.map */
