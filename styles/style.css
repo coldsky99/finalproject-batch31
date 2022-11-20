@@ -1,5 +1,5 @@
 h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 170px;
   line-height: 170px;
   color: #ffffff;
@@ -8,19 +8,18 @@ h1 {
 }
 
 h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 50px;
   line-height: 55px;
   text-transform: uppercase;
   color: #404040;
 }
-
 h2 .green-text {
   color: #94B43D;
 }
 
 h4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
@@ -28,7 +27,7 @@ h4 {
 }
 
 p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
@@ -43,7 +42,7 @@ i {
 
 /* Button */
 .delicious-btn {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   display: inline-block;
   min-width: 160px;
   color: #ffffff;
@@ -53,7 +52,6 @@ i {
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
-  -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: uppercase;
   background-color: #94B43D;
@@ -75,13 +73,11 @@ i {
     line-height: 40px;
   }
 }
-
 .grt-menu-row .grt-menu-logo a:hover {
   text-decoration: none;
 }
-
 .grt-menu-row ul.grt-menu li a {
-  font-family: 'Rbuik', sans-serif;
+  font-family: "Rbuik", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #404040;
@@ -102,7 +98,6 @@ i {
     height: 53px;
   }
 }
-
 /* #### Mobile Phones Portrait or Landscape #### */
 @media screen and (max-device-width: 640px) {
   .grt-mobile-button {
@@ -112,19 +107,14 @@ i {
     top: 10px;
   }
 }
-
-#carousel .carousel-inner .carousel-item {
+#about .carousel-inner .carousel-item {
   height: 628px;
   width: 100%;
   background: no-repeat center center scroll;
   background-size: cover;
-  transition: -webkit-transform 2s ease;
-  -webkit-transition: -webkit-transform 2s ease;
   transition: transform 2s ease;
-  transition: transform 2s ease, -webkit-transform 2s ease;
 }
-
-#carousel .carousel-inner .carousel-item .caption {
+#about .carousel-inner .carousel-item .caption {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 40px;
@@ -133,9 +123,8 @@ i {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-
-#carousel .carousel-inner .carousel-item .caption p {
-  font-family: 'Rubik', sans-serif;
+#about .carousel-inner .carousel-item .caption p {
+  font-family: "Rubik", sans-serif;
   font-size: 22px;
   line-height: 28px;
   color: #ffffff;
@@ -145,77 +134,64 @@ i {
           animation-delay: 2.2s;
   letter-spacing: 0px;
 }
-
-#carousel .carousel-inner .carousel-item .caption a {
+#about .carousel-inner .carousel-item .caption a {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
 }
-
-#carousel .carousel-inner .carousel-item.beach {
-  background-image: url("../images/slider/beach.png");
+#about .carousel-inner .carousel-item.frontend {
+  background-image: url("../images/slider/frontend.jpg");
 }
-
-#carousel .carousel-inner .carousel-item.afternoon {
-  background-image: url("../images/slider/afternoon.png");
+#about .carousel-inner .carousel-item.photoshop {
+  background-image: url("../images/slider/photoshop.jpg");
 }
-
-#carousel .carousel-inner .carousel-item.ricefield {
-  background-image: url("../images/slider/ricefield.png");
-}
-
-#carousel .mtop {
+#about .mtop {
   margin-top: 98px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #carousel .carousel-item {
+  #about .carousel-item {
     height: 421px;
   }
-  #carousel .carousel-item .caption h1 {
+  #about .carousel-item .caption h1 {
     font-size: 70px;
     line-height: 22px;
   }
-  #carousel .carousel-item .caption p {
+  #about .carousel-item .caption p {
     font-size: 18px;
     line-height: 24px;
   }
-  #carousel .mtop {
+  #about .mtop {
     margin-top: 53px;
   }
 }
-
 @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
-  #carousel .carousel-item .caption {
+  #about .carousel-item .caption {
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
   }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (device-width: 768px) {
-  #carousel .caption h1 {
+  #about .caption h1 {
     font-size: 100px;
     line-height: 100px;
   }
 }
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #carousel .caption h1 {
+  #about .caption h1 {
     font-size: 100px;
     line-height: 100px;
   }
 }
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
-  #carousel .caption h1 {
+  #about .caption h1 {
     font-size: 100px;
     line-height: 100px;
   }
 }
-
 .carousel-indicators li {
   width: 15px;
   height: 15px;
@@ -234,55 +210,48 @@ i {
     position: absolute;
     bottom: 50px;
     left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: start;
   }
 }
-
-.about img {
+.experience img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.cta {
-  background-image: url("../images/cta.png");
+.award {
+  background-image: url("../images/awards.png");
   font-family: "Montserrat", sans-serif;
-  color: #8d97ad;
+  color: #404040;
   font-weight: 300;
   background-size: cover;
   background-position: top;
 }
-
-.cta .card {
+.award .card {
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(115, 41, 41, 0.2);
 }
-
-.cta h2 {
-  font-family: 'Anton', sans-serif;
+.award h2 {
+  font-family: "Anton", sans-serif;
   font-size: 35px;
   line-height: 40px;
   text-transform: uppercase;
   color: #ffffff;
 }
-
-.cta .text-box {
+.award .text-box {
   padding: 30px 20px;
 }
-
-.cta .both-space {
+.award .both-space {
   margin: 80px 0;
 }
-
-.cta .btn-md {
+.award .btn-md {
   padding: 15px 45px;
   font-size: 16px;
+}
+.award p {
+  color: #FFFFFF;
 }
 
 @supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
@@ -291,25 +260,20 @@ i {
             backdrop-filter: blur(5px);
   }
 }
-
 footer {
   background: #94B43D;
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-
 footer ul {
   margin: 0;
   padding: 10px 0;
 }
-
 footer ul .list-inline-item {
   padding: 0 10px;
 }
-
 footer ul .list-inline-item .fab {
   color: white;
   font-size: 36px;
   line-height: 22px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

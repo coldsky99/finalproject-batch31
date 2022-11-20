@@ -131,7 +131,7 @@ i {
 	}
 }
 
-#carousel {
+#about {
 
     .carousel-inner {
 
@@ -169,17 +169,15 @@ i {
 
         }
         
-        .carousel-item.beach {
-            background-image: url("../images/slider/beach.png");
+        .carousel-item.frontend {
+            background-image: url("../images/slider/frontend.jpg");
         }
     
-        .carousel-item.afternoon {
-            background-image: url("../images/slider/afternoon.png");
+        .carousel-item.photoshop {
+            background-image: url("../images/slider/photoshop.jpg");
         }
     
-        .carousel-item.ricefield {
-            background-image: url("../images/slider/ricefield.png");
-        }
+        
 
     }
 
@@ -191,7 +189,7 @@ i {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #carousel {
+    #about {
 
         .carousel-item {
             height: 421px;
@@ -220,7 +218,7 @@ i {
 
 
 @supports (backdrop-filter: blur(5px)) {
-    #carousel .carousel-item .caption {
+    #about .carousel-item .caption {
         backdrop-filter: blur(5px);
     }
 }
@@ -229,14 +227,14 @@ i {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (device-width: 768px) {
-    #carousel .caption h1 {
+    #about .caption h1 {
         font-size: 100px;
         line-height: 100px;
     }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    #carousel .caption h1 {
+    #about .caption h1 {
         font-size: 100px;
         line-height: 100px;
 
@@ -244,7 +242,7 @@ i {
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    #carousel .caption h1 {
+    #about .caption h1 {
         font-size: 100px;
         line-height: 100px;
 
@@ -281,7 +279,7 @@ i {
 
 }
 
-.about {
+.experience {
     img {
         width: 100%;
         height: 100%;
@@ -289,17 +287,17 @@ i {
     }
 }
 
-.cta {
-    background-image: url("../images/cta.png");
+.award {
+    background-image: url("../images/awards.png");
     font-family: "Montserrat", sans-serif;
-    color: #8d97ad;
+    color: #404040;
     font-weight: 300;
     background-size: cover;
     background-position: top;
 
     .card {
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(115, 41, 41, 0.2);
     
     }
 
@@ -322,6 +320,10 @@ i {
     .btn-md {
         padding: 15px 45px;
         font-size: 16px;
+    }
+
+    p {
+        color: #FFFFFF;
     }
     
 }
